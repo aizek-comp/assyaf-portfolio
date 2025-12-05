@@ -3,132 +3,189 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assyaf Aizek | Portfolio</title>
+    <title>Assyaf Aizek | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Orbitron:wght@500&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-Z7O2KscUHO0gHJEGtQFpy6CyHn7WQJ7pFvvFRO3C3D2e7EhJvPFFhkLIlw5eS0cWpbQo1RxRU9n2T/vIuFiU5A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <script defer src="script.js"></script>
   </head>
   <body>
-    <!-- Hero Section -->
+    <div class="background-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">Assyaf<span>.Dev</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="resumeAssyafAizek.pdf" class="btn-resume" download>Resume</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
     <header class="hero">
       <div class="hero-content">
-        <div class="hero-image">
-          <img src="profile.jpg" alt="Assyaf Aizek" id="profile-img" />
-        </div>
-        <div class="hero-text">
-          <h1>Assyaf Aizek</h1>
-          <p>Aspiring Software Developer | UiTM Student | Problem Solver</p>
+        <div class="hero-text-wrapper">
+          <p class="greeting">Hello, I'm</p>
+          <h1 class="glitch-text" data-text="Assyaf Aizek">Assyaf Aizek</h1>
+          <h2 class="typing-text">
+            <span class="txt-type" data-wait="3000" data-words='["CS Student @ UiTM", "Full Stack Developer", "Tech Enthusiast", "Always Learning"]'></span>
+          </h2>
+          <p class="hero-desc">
+            Passionate about refining UI experiences and clean code patterns. 
+            Currently focused on <strong>upskilling</strong> and expanding my technical stack into modern full-stack development.
+          </p>
           <div class="hero-buttons">
-            <a href="#projects">View Projects</a>
-
-            <a href="resumeAssyafAizek.pdf" download>Download Resume</a>
-
-            <a href="#contact">Contact</a>
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="img-border">
+            <img src="profile.jpg" alt="Assyaf Aizek" id="profile-img" />
           </div>
         </div>
       </div>
     </header>
 
-    <!-- About Me Section -->
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a Computer Science student at UiTM with a CGPA of 3.88. I enjoy
-        building real-world systems and solving problems with code. From C++ to
-        web-based systems, I’ve gained hands-on experience developing practical
-        solutions. I'm looking for an internship from September 2025 to February
-        2026.
-      </p>
-      <p>
-        Fun fact: I love refining UI experiences and exploring clean code
-        patterns.
-      </p>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3><i class="fas fa-book"></i> Library Management System</h3>
-        <p><strong>Tech:</strong> HTML, CSS, PHP, JavaScript, XAMPP</p>
+    <section id="about" class="section glass-panel">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
         <p>
-          An online platform for students and staff to borrow books and book
-          study rooms. It features user-friendly interfaces, database
-          integration, and minimal physical contact workflows.
+          I'm a <strong>Computer Science student</strong> at UiTM with a <strong>CGPA of 3.88</strong>. 
+          I bridge the gap between complex backend logic and beautiful frontend interfaces. 
+          From <strong>C++ algorithms</strong> to full-stack <strong>web systems</strong>, 
+          I build practical solutions that work.
         </p>
-        <a
-          href="https://github.com/aizek-comp/University-Project/tree/bdc491ea3b84ddd365678563726150ac4c4e10aa/Project%20Semester%203"
-          >View on GitHub</a
-        >
-      </div>
-
-      <div class="project">
-        <h3><i class="fas fa-hotel"></i> Hotel Booking System (C++)</h3>
-        <p><strong>Tech:</strong> C++</p>
-        <p>
-          A console-based hotel room booking system built with OOP concepts such
-          as classes, methods, and customer data handling.
-        </p>
-        <a
-          href="https://github.com/aizek-comp/University-Project/tree/bdc491ea3b84ddd365678563726150ac4c4e10aa/Project%20Semester%201"
-          >View on GitHub</a
-        >
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills">
-      <h2>Technical Skills</h2>
-      <div class="skills-scroll">
-        <div class="skill"><i class="fab fa-html5"></i> HTML</div>
-        <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
-        <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
-        <div class="skill"><i class="fab fa-php"></i> PHP</div>
-        <div class="skill"><i class="fab fa-java"></i> Java</div>
-        <div class="skill"><i class="fas fa-database"></i> MySQL</div>
-        <div class="skill"><i class="fas fa-code"></i> C++</div>
-        <div class="skill"><i class="fab fa-github"></i> GitHub</div>
-        <div class="skill"><i class="fas fa-terminal"></i> VS Code</div>
-        <div class="skill">
-          <i class="fas fa-project-diagram"></i> Lucidchart
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card tilt-card">
+          <div class="card-content">
+            <div class="card-icon"><i class="fas fa-book-reader"></i></div>
+            <h3>Library Management System</h3>
+            <p class="tech-stack">HTML • PHP • MySQL • JS</p>
+            <p class="card-desc">
+              A complete platform for booking study rooms and borrowing books. 
+              Features database integration and contactless workflows.
+            </p>
+            <a href="https://github.com/aizek-comp/University-Project" target="_blank" class="link-arrow">
+              View Code <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card tilt-card">
+          <div class="card-content">
+            <div class="card-icon"><i class="fas fa-hotel"></i></div>
+            <h3>Hotel Booking System</h3>
+            <p class="tech-stack">C++ • OOP • File Handling</p>
+            <p class="card-desc">
+              Console-based system utilizing advanced OOP concepts like 
+              Classes and Inheritance to manage customer reservations efficiently.
+            </p>
+            <a href="https://github.com/aizek-comp/University-Project" target="_blank" class="link-arrow">
+              View Code <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2>Contact Me</h2>
-      <p>
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:assyafaizek@gmail.com">assyafaizek@gmail.com</a>
-      </p>
-      <p><i class="fas fa-phone"></i> 013-996-7839</p>
-      <p>
-        <a
-          href="https://www.linkedin.com/in/assyaf-aizek-ba8b03311/"
-          target="_blank"
-        >
-          <i class="fab fa-linkedin"></i> LinkedIn Profile
-        </a>
-      </p>
+   <section id="skills" class="section">
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="skills-wrapper">
+        <div class="skill-tag"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="skill-tag"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="skill-tag"><i class="fab fa-php"></i> PHP</div>
+        <div class="skill-tag"><i class="fab fa-java"></i> Java</div>
+        <div class="skill-tag"><i class="fas fa-code"></i> C++</div>
+        
+        <div class="skill-tag"><i class="fab fa-react"></i> React</div>
+        <div class="skill-tag"><i class="fab fa-node-js"></i> Node.js</div>
+        <div class="skill-tag"><i class="fas fa-database"></i> MongoDB</div>
+        <div class="skill-tag"><i class="fab fa-docker"></i> Docker</div>
+
+        <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
+        <div class="skill-tag"><i class="fas fa-terminal"></i> VS Code</div>
+      </div>
     </section>
 
-    <!-- Footer -->
+    <section id="hobbies" class="section">
+      <h2 class="section-title">Beyond Coding</h2>
+      
+      <div class="hobby-container">
+        <h3 class="hobby-title"><i class="fas fa-camera"></i> Photography</h3>
+        <p class="hobby-desc">Capturing moments and exploring visual storytelling through the lens.</p>
+        
+        <div class="gallery-wrapper">
+          <div class="gallery-track">
+            <img src="photo1.jpg" alt="Photography Shot 1" />
+            <img src="photo2.jpg" alt="Photography Shot 2" />
+            <img src="photo3.jpg" alt="Photography Shot 3" />
+            <img src="photo4.jpg" alt="Photography Shot 4" />
+            <img src="photo5.jpg" alt="Photography Shot 5" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hobby-container">
+        <h3 class="hobby-title"><i class="fas fa-running"></i> Sports</h3>
+        <p class="hobby-desc">Staying active and disciplined through running and team sports.</p>
+        
+        <div class="gallery-wrapper">
+          <div class="gallery-track">
+            <img src="sport1.jpg" alt="Sports Event 1" />
+            <img src="sport2.jpg" alt="Sports Event 2" />
+            <img src="sport3.jpg" alt="Sports Event 3" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact" class="section glass-panel">
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="contact-container">
+        <a href="mailto:assyafaizek@gmail.com" class="contact-box">
+          <i class="fas fa-envelope"></i>
+          <span>assyafaizek@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/assyaf-aizek-ba8b03311/" target="_blank" class="contact-box">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <div class="contact-box">
+          <i class="fas fa-phone"></i>
+          <span>013-996-7839</span>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <p>&copy; 2025 Assyaf Aizek. All rights reserved.</p>
+      <p>&copy; 2025 Assyaf Aizek. Built with <i class="fas fa-heart" style="color:#22c55e"></i> and Code.</p>
     </footer>
   </body>
 </html>
